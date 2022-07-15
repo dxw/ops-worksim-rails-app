@@ -1,22 +1,26 @@
-<!-- TODO: Remove template home page and any assets -->
 <section class="container">
   <div class="row">
     <aside class="col">
       <%= image_tag("dxw-logo-512x512.png") %>
     </aside>
     <article class="col">
-      <h1>Rails Template</h1>
-      <p>Welcome to dxw's template. This application contains our latest defaults for use when starting a new repository to get going as quickly as possible.</p>
-      <p>On first use please refer to the template <%= link_to "README", "https://github.com/dxw/rails-template", target: :blank %> for further instructions.
-      <p>This home page should be removed during initial set up.</p>
-
-      <h2>Helpful links</h2>
+      <h1>dxw Ops-Engineer worksim App</h1>
+      <p>This is the app we have been asked to deploy</p>
+      <p>We can use the `Dockerfile` to build an image, and push it to a container registry</p>
+      <p>The `docker-compose.yml` file shows that this app also requires a Postgres database</p>
+      <h3>GitHub repository links</h2>
       <ul>
         <li>
-          <%= link_to "Architecture decision records", "https://github.com/dxw/rails-template/tree/develop/doc/architecture/decisions" %>
+          <%= link_to "Rails app repo (this app)", "https://github.com/dxw/ops-worksim-rails-app" %> - https://github.com/dxw/ops-worksim-rails-app
         </li>
         <li>
-          <%= link_to "dxw RFCs", "https://github.com/dxw/tech-team-rfcs/" %>
+          <%= link_to "Terraform repo", "https://github.com/dxw/ops-worksim-terraform" %> - https://github.com/dxw/ops-worksim-terraform
+        </li>
+      </ul>
+      <h3>Helpful links</h2>
+      <ul>
+        <li>
+          <%= link_to "Launching an RDS (database) on AWS with Terraform", "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance#basic-usage" %> - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance#basic-usage
         </li>
       </ul>
     </article>
